@@ -9,7 +9,7 @@ export default function LiveMonitor() {
   const fetchLiveAlerts = async () => {
     try {
       setLoading(true);
-      const res = await fetch('http://localhost:8000/live-alerts/');
+      const res = await fetch('https://disaster-detection-pq59.onrender.com/live-alerts/');
       const data = await res.json();
       if (data.events) {
         setAlerts(data.events);
