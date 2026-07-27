@@ -12,7 +12,7 @@ os.makedirs(PUBLIC_DIR, exist_ok=True)
 
 WIKI_IMAGES = {
     "earthquake": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Damaged_buildings_in_Port-au-Prince.jpg",
-    "flood": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flooded_houses_in_Thailand.jpg",
+    "flood": "https://as1.ftcdn.net/v2/jpg/09/37/50/38/1000_F_937503847_oJvGyFdf67kDaIJeawAOO98tKYb4zo78.jpg",
     "fire": "https://upload.wikimedia.org/wikipedia/commons/7/7c/California_wildfires_2007.jpg",
     "storm": "https://upload.wikimedia.org/wikipedia/commons/9/98/Hurricane_Michael_damage_in_Mexico_Beach.jpg",
     "volcano": "https://upload.wikimedia.org/wikipedia/commons/0/07/Kilauea_eruption_2018.jpg",
