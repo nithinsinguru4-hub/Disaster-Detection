@@ -12,7 +12,7 @@ app = FastAPI(title="Disaster Damage Detection API")
 # Enable CORS for the frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjust this in production
+    allow_origins=["https://disaster-detection-3q54df01t-nithinsinguru4-hubs-projects.vercel.app"],  # Adjust this in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
