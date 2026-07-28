@@ -40,7 +40,7 @@ export default function HistoricalArchive() {
   const fetchArchives = async () => {
     try {
       setLoading(true);
-      const res = await fetch('https://disaster-detection-pq59.onrender.com/historical-archive');
+      const res = await fetch('https://darling-scanning-culture.ngrok-free.dev/historical-archive');
       const data = await res.json();
       if (data.events) {
         setArchives(data.events);

@@ -33,7 +33,7 @@ export default function UploadSection({ onPrediction }) {
     formData.append('file', file);
 
     try {
-      const response = await fetch('https://disaster-detection-pq59.onrender.com/predict/', {
+      const response = await fetch('https://darling-scanning-culture.ngrok-free.dev/predict/', {
         method: 'POST',
         body: formData,
       });
