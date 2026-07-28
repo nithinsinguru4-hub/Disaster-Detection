@@ -33,12 +33,11 @@ export default function UploadSection({ onPrediction }) {
     formData.append('file', file);
 
     try {
-     const response = await fetch('https://darling-scanning-culture.ngrok-free.dev/predict/', {
-  method: 'POST',
-  headers: {
-    "ngrok-skip-browser-warning": "true"
-  },
-  body: formData,
+     const response = await fetch("/predict/", {
+
+
+      method: 'POST',
+      body: formData,
 });
       if (!response.ok) {
         throw new Error('Network response was not ok');
