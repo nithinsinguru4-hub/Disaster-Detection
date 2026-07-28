@@ -9,7 +9,11 @@ export default function LiveMonitor() {
   const fetchLiveAlerts = async () => {
     try {
       setLoading(true);
-      const res = await fetch('https://darling-scanning-culture.ngrok-free.dev/live-alerts');
+      const res = await fetch('https://darling-scanning-culture.ngrok-free.dev/live-alerts', {
+        headers: {
+          "ngrok-skip-browser-warning": "true"
+        }
+      });
       const data = await res.json();
       if (data.events) {
         setAlerts(data.events);
